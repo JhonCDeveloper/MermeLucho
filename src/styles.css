@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mona+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --primary-green: #99BC85;
+    --primary-white: #FDFAF6;
+    --primary-black: #18230F;
+}
+
+body {
+    background-color: var(--primary-white);
+}
+
+header {
+    background: #18230F;
+    width: 98%;
+    margin: 0 auto;
+    border-radius: 50px;
+    height: 80px;
+}
+
+. {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.left-a, .right-a {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.items-center {
+    height: 100%;;
+}
+
+.logo-text {
+    color: var(--primary-green);
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;;
+}
+
+.logo-img {
+    width: 40px;
+}
+
+.left-nav {
+    justify-content: space-between;
+    padding-left: 160px;
+}
+
+.right-nav {
+    justify-content: space-between;
+    padding-right: 160px;
+}
+
+.logo-container {
+    gap: 5px;
+}
+
+.logo-image {
+    width: 65px;
+    border-radius: 50%;
+}
+
+.Link:hover {
+    color: var(--primary-green);
+}
+
+button {
+    background-color: var(--primary-black);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
