@@ -9,6 +9,8 @@
     --primary-green: #99BC85;
     --primary-white: #FDFAF6;
     --primary-black: #18230F;
+    --primary-purple: #832D5A;
+    --primary-yellow: #FEF102;
 }
 
 body {
@@ -82,4 +84,88 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+.mermeluchos-container {
+    margin: auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.mermeluchos-img {
+    position: absolute;
+    top: 15vh;
+    width: 500px;
+    object-fit: cover;
+    height: 535px;
+    z-index: 2; /* Mayor z-index para que esté por encima */
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.main-title {
+    position: absolute;
+    z-index: 1; /* Menor z-index para que esté detrás */
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: var(--primary-black);
+    text-align: center;
+    width: 100%;
+    top: 5vh;
+    font-size: 80px;
+
+    max-width: 800px; /* Ajusta este valor según necesites */
+    margin: 0 auto; /* Centra el bloque de texto */
+    left: 0;
+    right: 0;
+    overflow-wrap: break-word; /* Permite que las palabras largas se dividan */
+    word-break: normal; /* Controla cómo se dividen las palabras */
+    line-height: 1.2;
+}
+
+.mermepagina {
+    color: var(--primary-green);
+}
+
+.containerBorder {
+    position: absolute;
+     top: 38vh;
+     right: 5%;
+    width: 50vh;
+    height: 35vh;
+    
+}
+
+.main-subtitle {
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: var(--primary-white);
+    text-align: center;
+    top: 30%;
+    margin-top: -40px;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.blackSimbol {
+    color: var(--primary-green);
+}
+
+.second-subtitle {
+    position: absolute;
+    font-family: 'Oswald' italic, sans-serif;
+    font-weight: 100;
+    color: var(--primary-black);
+    text-align: start;
+    top: 45vh;
+    left: 50px;
+    width: 400px;
+    font-size: 40px;
+}
+
+.phraseMark {
+    font-size: 60px;
 }
